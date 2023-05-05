@@ -86,70 +86,124 @@
 
 # sau
 
-def ultima_cifra_a_unui_numar(nr):
-    return nr %10
-# ultima_cifra_a_unui_numar(20)
+# def ultima_cifra_a_unui_numar(nr):
+#     return nr %10
+# # ultima_cifra_a_unui_numar(20)
 
-# O functie care taie ultima cifra a unui numar:
-def taie_ultima_cifra(nr):
-    return nr // 10
-# print(taie_ultima_cifra(123))
+# # O functie care taie ultima cifra a unui numar:
+# def taie_ultima_cifra(nr):
+#     return nr // 10
+# # print(taie_ultima_cifra(123))
 
-# O functie care, folosind ultima_cifra si taie_ultima_cifra sa scrie numarul in ordine inversa:
-def inverseaza_numar(nr):
-    invers = ""
-    while nr>0:
-        ult_cifra = ultima_cifra_a_unui_numar(nr)
-        nr = taie_ultima_cifra(nr)
-        invers += str(ult_cifra)
-    return invers
-# inverseaza_numar(12345)
+# # O functie care, folosind ultima_cifra si taie_ultima_cifra sa scrie numarul in ordine inversa:
+# def inverseaza_numar(nr):
+#     invers = ""
+#     while nr>0:
+#         ult_cifra = ultima_cifra_a_unui_numar(nr)
+#         nr = taie_ultima_cifra(nr)
+#         invers += str(ult_cifra)
+#     return invers
+# # inverseaza_numar(12345)
 
-# O functie care verifica daca un numar se citeste la fel de la cap la coada:
-def verifica_citire_inversa(nr):
-    invers = inverseaza_numar(nr)
-    if nr != invers:
-        print(False)
-    else:
-        print(True)
-# verifica_citire_inversa(101)
+# # O functie care verifica daca un numar se citeste la fel de la cap la coada:
+# def verifica_citire_inversa(nr):
+#     invers = inverseaza_numar(nr)
+#     if nr != invers:
+#         print(False)
+#     else:
+#         print(True)
+# # verifica_citire_inversa(101)
 
-# O functie care face inmultirea a 2 numere:
-def inmultire(x,y):
-    return x * y
-# print(inmultire(2,3))
+# # O functie care face inmultirea a 2 numere:
+# def inmultire(x,y):
+#     return x * y
+# # print(inmultire(2,3))
 
-# O functie care calculeaza puterea unui numar x folosind functia de inmultire de mai sus
-def putere(baza,exponent):
-    putere = baza
-    for i in range(exponent - 1):
-        putere = inmultire(putere,baza)
-    return putere
-# print(putere(2,5))
+# # O functie care calculeaza puterea unui numar x folosind functia de inmultire de mai sus
+# def putere(baza,exponent):
+#     putere = baza
+#     for i in range(exponent - 1):
+#         putere = inmultire(putere,baza)
+#     return putere
+# # print(putere(2,5))
 
-# Variabile globale:
-nr = 100
-def mareste_numar(n):
-    global nr
-    nr = nr + n
-# mareste_numar(10)
-# mareste_numar(100)
-# print(nr)
+# # Variabile globale:
+# nr = 100
+# def mareste_numar(n):
+#     global nr
+#     nr = nr + n
+# # mareste_numar(10)
+# # mareste_numar(100)
+# # print(nr)
 
-def mareste(x,y):
-    x = x + y
-    return x
-# print(mareste)
+# def mareste(x,y):
+#     x = x + y
+#     return x
+# # print(mareste)
 
-# O functie care verifica daca un numar este prin
-def prim(nr):
-    flag = 0
-    for i in range(2,(nr//2 + 1)):
-        if nr % i == 0:
-            flag = 1
-    if flag == 1:
-        print("Nu este prim")
-    else:
-        print("Este prim")
-prim(11)
-    
+# # O functie care verifica daca un numar este prin
+# def prim(nr):
+#     flag = 0
+#     for i in range(2,(nr//2 + 1)):
+#         if nr % i == 0:
+#             flag = 1
+#     if flag == 1:
+#         print("Nu este prim")
+#     else:
+#         print("Este prim")
+# # prim(11)
+
+# # O functie care afiseaza numarul de elemnte prime din lista:
+# def eprim(nr):
+#     flag = 0
+#     for i in range(2,nr//2 + 1):
+#         if nr % i == 0:
+#             flag == 1
+#     if flag == 1:
+#         return True
+#     else:
+#         return False
+# # print(eprim(12))
+
+# def numere_prime(listadesus):
+#     nrPrime = 0
+#     for i in listadesus:
+#         if (eprim(i)) :
+#             nrPrime += 1
+#     print(nrPrime)
+# lista = [2,3,4,5,6,7,8,9,11]
+# # numere_prime(lista)
+
+# print(eprim(11))
+        
+# # O functie care primeste 2 siruri de caractere ca parametru si le concateneaza:
+# def concateneaza(a,b):
+#     return a + b
+# print(concateneaza("nume ","prenume"))
+
+# O functie care eleminia duplicate dintr-o lista:
+
+# def elimina_duplicate(sir):
+#     frecvente = {}
+#     for el in sir:
+#         if frecvente.get(el) != None:
+#             frecvente[el] += 1
+#         else:
+#             frecvente[el] = 1
+#     lista = []
+#     for cheie in frecvente:
+#         if frecvente[cheie] == 1:
+#             lista.append(cheie)
+#         print(cheie)
+
+# lista = ["dan" , "maria" , "razvan" , "dan" , "maria" , "maria"]
+            
+# elimina_duplicate(lista)
+
+# O functie care fiind dat un numar n returneaza 1*2*3*....*n:
+def factorial(n):
+    produs = 1
+    for i in range(1, n+1):
+        produs = produs*i 
+    return produs
+print(factorial(6))
