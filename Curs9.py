@@ -109,7 +109,47 @@ def inverseaza_numar(nr):
 def verifica_citire_inversa(nr):
     invers = inverseaza_numar(nr)
     if nr != invers:
-        print(True)
-    else:
         print(False)
-verifica_citire_inversa(101)
+    else:
+        print(True)
+# verifica_citire_inversa(101)
+
+# O functie care face inmultirea a 2 numere:
+def inmultire(x,y):
+    return x * y
+# print(inmultire(2,3))
+
+# O functie care calculeaza puterea unui numar x folosind functia de inmultire de mai sus
+def putere(baza,exponent):
+    putere = baza
+    for i in range(exponent - 1):
+        putere = inmultire(putere,baza)
+    return putere
+# print(putere(2,5))
+
+# Variabile globale:
+nr = 100
+def mareste_numar(n):
+    global nr
+    nr = nr + n
+# mareste_numar(10)
+# mareste_numar(100)
+# print(nr)
+
+def mareste(x,y):
+    x = x + y
+    return x
+# print(mareste)
+
+# O functie care verifica daca un numar este prin
+def prim(nr):
+    flag = 0
+    for i in range(2,(nr//2 + 1)):
+        if nr % i == 0:
+            flag = 1
+    if flag == 1:
+        print("Nu este prim")
+    else:
+        print("Este prim")
+prim(11)
+    
