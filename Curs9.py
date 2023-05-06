@@ -1,4 +1,4 @@
-#Cursul 9. Despre functii
+#Cursul 9. Despre functii:
 
 # def f(x):
 #     variabila = x + 2
