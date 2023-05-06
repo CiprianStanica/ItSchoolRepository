@@ -1,4 +1,5 @@
-# Acesta este cursul 10
+# Acesta este cursul 10:
+print("CUrs10")
 
 # O functie care primeste ca parametri 3 numere si afiseaza maximul dintre acestea(fara for si fara while):
 def afiseaza_maxim(a,b,c):
@@ -102,5 +103,6 @@ def prime(lista):
                 prim = False
         if prim == True:
             print(nr)
-# prime(lista)
+#prime(lista)
 
+# Acesta a fost cursul 10
