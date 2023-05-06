@@ -200,10 +200,10 @@
             
 # elimina_duplicate(lista)
 
-# O functie care fiind dat un numar n returneaza 1*2*3*....*n:
-def factorial(n):
-    produs = 1
-    for i in range(1, n+1):
-        produs = produs*i 
-    return produs
-print(factorial(6))
+# # O functie care fiind dat un numar n returneaza 1*2*3*....*n:
+# def factorial(n):
+#     produs = 1
+#     for i in range(1, n+1):
+#         produs = produs*i 
+#     return produs
+# print(factorial(6))
