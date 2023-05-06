@@ -102,5 +102,5 @@ def prime(lista):
                 prim = False
         if prim == True:
             print(nr)
-prime(lista)
+# prime(lista)
 
