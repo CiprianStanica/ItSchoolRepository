@@ -37,4 +37,5 @@ dict = {
 def primeste_cheie_returneaza_valoare(a):
     valoare = dict.get(a)
     return valoare
-print(primeste_cheie_returneaza_valoare("b"))
+# print(primeste_cheie_returneaza_valoare("b"))
+
