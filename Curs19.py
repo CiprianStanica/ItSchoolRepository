@@ -136,10 +136,10 @@ class Banca():
             if not exista:
                 print("Contul introdus nu exista")
 
-BT = Banca()
-BT.creeaza_cont()
-BT.creeaza_cont()
-BT.interogare_conturi()
-# BT.depunere_pe_baza_de_cont()
-BT.inchide_cont()
-BT.interogare_conturi()
+# BT = Banca()
+# BT.creeaza_cont()
+# BT.creeaza_cont()
+# BT.interogare_conturi()
+# # BT.depunere_pe_baza_de_cont()
+# BT.inchide_cont()
+# BT.interogare_conturi()
